@@ -1,0 +1,31 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: #5E4D95;
+    font-size: 15pt;
+    background-color: #ebebfcc3;
+}
+
+#maintitle {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40pt;
+}
+
+header {
+    background-color: #CECFFF;
+}
+
+span {
+    font-weight: 700;
+    color: #39257A;
+    font-style: italic;
+}
+
+
+body .emphasis {
+    font-weight: 700;
+    color: #39257A
+}
+
+body .deemphasis {
+    color: #907Ec8;
+}
