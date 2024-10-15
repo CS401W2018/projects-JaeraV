@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    line-height: 1.5;
+    background-color: #D3E0DC;
+}
+
+header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 3px 3px #ffff;
+    border: thin solid black;
+    background-color: #97cfcf;
+    color: black;
+    height: 100px;
+    width: 600px;
+    border-radius: 25px;
+    margin: auto;
+}
+
+main h3 {
+    font-style: italic;
+    padding: 0 70px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    font-weight: bold;
+}
+
+nav a {
+    display: block;
+    background-color: #aee1e1;
+    color: #507882;
+    border-bottom: thin solid white;
+    padding: 10px 25px;
+    float: left;
+    margin-left: 15px;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    color: #507882;
+    background-color: white;
+}
+
+figcaption {
+    text-align: center;
+    padding: 5px ;
+}
+
+figure {
+    border-radius: 15px;
+    box-shadow: 5px 5px gray;
+}
+
+#paintingpic {
+    width: 300px;
+    border: thick solid #dcaf90;
+    border-radius: 20px 20px;
+    float: left;
+    background-color: #f0e9df;
+    padding: 5px 5px;
+}
+
+img {
+    border-radius: 5% 5% 0 0;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    font-size: 12pt;
+    background-image: url(paintbrush.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-size: 40px;
+}
+
+#wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: thin solid black;
+    padding: 20px 30px;
+    background-color: #faefe5;
+}
