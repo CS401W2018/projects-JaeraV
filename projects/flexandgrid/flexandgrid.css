@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e8dbcb
+}
+
+header {
+    background-color: #daa38f;
+    padding: 3px 0;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: #bbcdc7;
+    gap: 10px;
+    font-weight: bold;
+}
+
+#container {
+    display: flex;
+}
+
+aside {
+    width: 350px;
+    background-color: #92ada4;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+img {
+    width: 290px;
+    border-radius: 15px 15px 0 0;
+    padding: 5px;
+}
+
+.profilecard {
+    width: 300px;
+    border: 5px solid #c38c6b;
+    border-radius: 15px;
+    box-shadow: 5px 5px #c7b9ab;
+    background-color: #fbebe0;
+}
+
+figcaption {
+    padding: 0 5px;
+}
+
+footer a {
+    display: block;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
