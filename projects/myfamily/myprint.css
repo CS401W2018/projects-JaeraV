@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header {
+    font-family: cursive;
+    background-color: aquamarine;
+    text-align: center;
+    padding: 25px;
+    font-size: 18pt;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 2px 10px;
+}
+
+nav {
+    display: none;
+    /* display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: antiquewhite; */
+}
+
+.content {
+    display: flex;
+}
+
+.sideimage {
+    width: 100%;
+    border: thin solid black;
+    margin: 0;
+}
+
+main {
+    padding: 10px;
+}
+
+.maintitle {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+
+img {
+    width: 100%;
+}
+
+article {
+    width: 150px;
+    /* width: 300px; */
+    background-color: beige;
+    border: thin solid black;
+    /* box-shadow: 5px 5px 5px gray; */
+}
+
+.members {
+    display: flex;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+
+}
+
+.family {
+    width: 95%;
+    /* border: thin solid black; */
+    margin: auto;
+    padding: 5px;
+}
+
+.name {
+    font-family: 'Times New Roman', Times, serif;
+    /* font-size: 20pt; */
+    font-size: 12pt;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+aside {
+    width: 25%;
+    background-color: cadetblue;
+    padding: 5px;
+}
+
+.credits {
+    font-size: 5pt;
+    /* font-size: 8pt; */
+    text-align: end;
+    margin: 0;
+}
+
