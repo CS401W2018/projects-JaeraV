@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tables101.css">
+</head>
+<body>
+    <header>
+        <h1>My Class Schedule</h1>
+    </header>
+    <main>
+        <table class="schedule">
+            <caption>My Class Schedule</caption>
+            <thead>
+                <tr>
+                    <th>Dept.</th><th>Number</th><th>Time</th><th>Location</th><th>Credits</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th colspan="5">Information Technology</th>
+                </tr>
+                <tr>
+                    <td>IT</td><td>240</td><td>10AM</td><td>P3</td><td>3</td>
+                </tr>
+                <tr>
+                    <td>IT</td><td>240</td><td>11AM</td><td>P3</td><td>3</td>
+                </tr>
+                <tr>
+                    <td>IT</td><td>240</td><td>12PM</td><td>P3</td><td>3</td>
+                </tr>
+                <tr>
+                    <th colspan="5">Computer Science</th>
+                </tr>
+                <tr>
+                    <td>CS</td><td>210</td><td>2PM</td><td>P1</td><td>3</td>
+                </tr>
+                <tr>
+                    <td>CS</td><td>211</td><td>12PM</td><td>P2</td><td>3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="4" id="total-credits">Total Credits</th>
+                    <td headers="total-credits">12</td>
+                </tr>
+            </tfoot>
+        </table>
+        <hr>
+        <h3>Engagement Questions:</h3>
+        <p>Why don't we use the border property?</p>
+        <p>
+            We don't use the border property because CSS can't overwrite or change it. Also, there will be a validation error with your HTML.
+        </p>
+
+        <p>What is the easiest way to color every other row a different color?</p>
+        <p>
+            By using CSS selectors and using odd or even for the alternation effect. For example, <em>".schedule tbody tr:nth-child(even)"</em> 
+        </p>
+
+        <p>When should we use a table?</p>
+        <p>
+            We should use a table when we want to present a data in our webpage. We do this so we can present our data in a more organized way for the users.
+        </p>       
+    </main>
+    <hr>
+    <footer>
+        <p>&copy;Jaera Villar 2024</p>
+    </footer>
+</body>
+</html>
