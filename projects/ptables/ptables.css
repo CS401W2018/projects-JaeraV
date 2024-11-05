@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #2a5b7f;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    color: whitesmoke;
+    font-family: cursive;
+    font-size: 35pt;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    justify-content: space-around;
+    background-color: #afcadc;
+    padding: 5px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 80%;
+    padding: 5px;
+}
+
+.content {
+    display: flex;
+}
+
+aside {
+    width: 20%;
+    background-color: aliceblue;
+    padding: 5px;
+}
+
+.albums {
+    border: thin solid black;
+    margin: 10px auto;
+    border-spacing: 0;
+    caption-side: bottom;
+    border-collapse: collapse;
+}
+
+.albums th {
+    background-color: #e39fa9;
+    border: thin solid black;
+    padding: 10px;
+}
+
+.albums tr, .albums td {
+    border: thin solid black;
+    padding: 5px;
+}
+
+.albums tbody tr:nth-child(even){
+    background-color: #f6d2d5;
+}
+
+.albums tbody tr:nth-child(odd){
+    background-color: #f5eeee;
+}
+
+
