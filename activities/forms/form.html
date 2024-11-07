@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Web Design</h1>
+    </header>
+    <main>
+        <form action="processing.html" method="post">
+            First name: <input type="text" name="first" value="Jane"> <br>
+            Last name: <input type="text" name="last" placeholder="Last Name"><br>
+            Password: <input type="password" name="pass"><br>
+            Checkbox: <input type="checkbox" name="yes" checked> Agree<br>
+            Checkbox: <input type="checkbox" name="no"> Disagree <br>
+            Number: <input type="number" name="num"><br>
+            <!-- Hidden: <input type="hidden" ><br> -->
+            Birthday: <input type="date" name="birthdate" required><br>
+            Class: <br>
+            <input type="radio" name="class" value="freshman" required> Freshman <br>
+            <input type="radio" name="class" value="sophomore"> Sophomore <br>
+            <input type="radio" name="class" value="junior"> Junior <br>
+            <input type="radio" name="class" value="senior"> Senior <br>
+            Comment: <textarea name="comments">Put your comments here</textarea> <br>
+            State: <select name="state">
+                <option value="blank"></option>
+                <option value="hi">Hawaii</option>
+                <option value="ca">California</option>
+                <option value="co">Colorado</option>
+            </select>
+            <input type="submit">
+        </form>
+
+        <hr>
+        <h3>
+            Engagement Questions:
+        </h3>
+        <h4>
+            The form tag has an "action" attribute. What does it do?
+        </h4>
+        <p>
+            It specifies the link or URL where the data will go once the user click submit.
+        </p>
+        <h4>
+            The form tag has a "method" attribute. What does it do?
+        </h4>
+        <p>
+            It defines how the data will be sent to the server. It is how the web server and the webpage interact when the form is submitted.
+        </p>
+        <h4>
+            What is the difference between a "POST" and a "GET"?
+        </h4>
+        <p>
+            One difference is that using "GET" will make your data visible in the URL while "POST" will not show the data in the URL. "GET" is usually used when you want to retrieve or get something, for example, clicking on a link or when you are doing a search. On the other hand, "POST" is when you want to change stuffs in the server, for example, creating an account, submitting or adding something.
+        </p>
+    </main>
+    <footer>
+        <p>&copy;Jaera Villar 2024</p>
+    </footer>
+</body>
+</html>
