@@ -12,27 +12,58 @@
     </header>
     <main>
         <form action="processing.html" method="post">
-            First name: <input type="text" name="first" value="Jane"> <br>
-            Last name: <input type="text" name="last" placeholder="Last Name"><br>
-            Password: <input type="password" name="pass"><br>
-            Checkbox: <input type="checkbox" name="yes" checked> Agree<br>
-            Checkbox: <input type="checkbox" name="no"> Disagree <br>
-            Number: <input type="number" name="num"><br>
-            <!-- Hidden: <input type="hidden" ><br> -->
-            Birthday: <input type="date" name="birthdate" required><br>
-            Class: <br>
-            <input type="radio" name="class" value="freshman" required> Freshman <br>
-            <input type="radio" name="class" value="sophomore"> Sophomore <br>
-            <input type="radio" name="class" value="junior"> Junior <br>
-            <input type="radio" name="class" value="senior"> Senior <br>
-            Comment: <textarea name="comments">Put your comments here</textarea> <br>
-            State: <select name="state">
-                <option value="blank"></option>
-                <option value="hi">Hawaii</option>
-                <option value="ca">California</option>
-                <option value="co">Colorado</option>
-            </select>
-            <input type="submit">
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div class="form-row">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="first" placeholder="First Name">
+                </div>
+                <div class="form-row">
+                    <label for="lname">Last name:</label>
+                    <input type="text" name="last" id="lname" placeholder="Last Name">
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" id="pass" name="pass">
+                </div>
+            
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label>
+                        <input type="checkbox" name="remember" checked>
+                        Remember me
+                    </label>
+                </div>
+            
+                <!-- Number: <input type="number" name="num"><br> -->
+                <!-- Hidden: <input type="hidden" ><br> -->
+                <!-- Birthday: <input type="date" name="birthdate" required><br> -->
+
+                <div class="check-row">
+                    <div class="spacer">Class:</div>
+                    <label><input type="radio" name="class" value="freshman" required> Freshman</label>
+                    <label><input type="radio" name="class" value="sophomore"> Sophomore</label>
+                    <label><input type="radio" name="class" value="junior"> Junior</label>
+                    <label><input type="radio" name="class" value="senior"> Senior</label>
+                </div>
+                <div class="form-row">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments" >Put your comments here</textarea>
+                </div>
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="blank"></option>
+                        <option value="hi">Hawaii</option>
+                        <option value="ca">California</option>
+                        <option value="co">Colorado</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit">
+                </div>
+            </fieldset>
         </form>
 
         <hr>
@@ -40,22 +71,16 @@
             Engagement Questions:
         </h3>
         <h4>
-            The form tag has an "action" attribute. What does it do?
+            What are different ways to style your form?
         </h4>
         <p>
-            It specifies the link or URL where the data will go once the user click submit.
+            You can use the "fieldset" to but the form in a box and you can add background colors, and box shadows. Also to make the form look professional, you can put the different fields in a div tag to make it easier to align using either display grid or flex. You can also style input tags by using [type="submit"]and:not([type="submit"]). And you can make it responsive for mobile devices by adding a media query.
         </p>
         <h4>
-            The form tag has a "method" attribute. What does it do?
+            Why does the professor like to use flex?
         </h4>
         <p>
-            It defines how the data will be sent to the server. It is how the web server and the webpage interact when the form is submitted.
-        </p>
-        <h4>
-            What is the difference between a "POST" and a "GET"?
-        </h4>
-        <p>
-            One difference is that using "GET" will make your data visible in the URL while "POST" will not show the data in the URL. "GET" is usually used when you want to retrieve or get something, for example, clicking on a link or when you are doing a search. On the other hand, "POST" is when you want to change stuffs in the server, for example, creating an account, submitting or adding something.
+            Because it makes it easier to align and make the form look professional. It also prevents the children from overflowing in their alloted spaces.
         </p>
     </main>
     <footer>
