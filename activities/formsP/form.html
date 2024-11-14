@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Web Design</h1>
+    </header>
+    <main>
+        <form action="processing.html" method="post" id="myForm">
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div class="form-row">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="first" placeholder="First Name">
+                </div>
+                <div class="form-row">
+                    <label for="lname">Last name:</label>
+                    <input type="text" name="last" id="lname" placeholder="Last Name">
+                </div>
+                <div class="form-row">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age">
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" id="pass" name="pass">
+                </div>
+            
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label>
+                        <input type="checkbox" name="remember" id="remember" checked>
+                        Remember me
+                    </label>
+                </div>
+                <div class="check-row">
+                    <div class="spacer">Class:</div>
+                    <label><input type="radio" name="class" value="freshman" required> Freshman</label>
+                    <label><input type="radio" name="class" value="sophomore"> Sophomore</label>
+                    <label><input type="radio" name="class" value="junior"> Junior</label>
+                    <label><input type="radio" name="class" value="senior"> Senior</label>
+                </div>
+                <div class="form-row">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments">Put your comments here</textarea>
+                </div>
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="blank"></option>
+                        <option value="hi">Hawaii</option>
+                        <option value="ca">California</option>
+                        <option value="co">Colorado</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit">
+                </div>
+            </fieldset>
+        </form>
+
+        <hr>
+        <h3>
+            Engagement Questions:
+        </h3>
+        <h4>
+            What is JavaScript? How did it get its name?
+        </h4>
+        <p>
+            JavaScript runs inside the web browser. It is a programming language which is used to make web pages interactive. It was created in 1995 by Brendan Eich and was called "Live Script" then it became "JavaScript". The name is similar to the programming language, Java, but they are very different.
+        </p>
+        <h4>
+            What are two ways you can run JavaScript?
+        </h4>
+        <p>
+            In the Browser (DOM) and Node.js
+        </p>
+        <h4>
+            What was the most popular front-end js library?
+        </h4>
+        <p>
+            jQuery.js
+        </p>
+        <h4>
+            What is the most popular front-end js library today?
+        </h4>
+        <p>
+            React.js
+        </p>
+    </main>
+    <footer>
+        <p>&copy;Jaera Villar 2024</p>
+    </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const first = document.getElementById('fname').value;
+            const last = document.getElementById('lname').value;
+            const age = document.getElementById('age').value;
+
+            // validation
+            if (!first || !last) {
+                alert("Please provide your full name.");
+                return;
+            }
+
+            if (!age || age < 18) {
+                alert("You must be 18 years or older to submit this form.")
+                return;
+            }
+
+            const formData = {
+                firstName: first,
+                lastName: last,
+                age: age
+            }
+            // console.log(first);
+            // console.log(last);
+
+            console.log(formData);
+
+            // alert("Form Submitted");
+        })
+    </script>
+</body>
+</html>
