@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Web Design</h1>
+    </header>
+    <main>
+        <div id="message"></div>
+        <form action="processing.html" method="post" id="myForm">
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div class="form-row">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="first" placeholder="First Name">
+                </div>
+                <div class="form-row">
+                    <label for="lname">Last name:</label>
+                    <input type="text" name="last" id="lname" placeholder="Last Name">
+                </div>
+                <div class="form-row">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age">
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" id="pass" name="pass">
+                </div>
+            
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label>
+                        <input type="checkbox" name="remember" id="remember" checked>
+                        Remember me
+                    </label>
+                </div>
+                <div class="check-row">
+                    <div class="spacer">Class:</div>
+                    <label><input type="radio" name="class" value="freshman" required> Freshman</label>
+                    <label><input type="radio" name="class" value="sophomore"> Sophomore</label>
+                    <label><input type="radio" name="class" value="junior"> Junior</label>
+                    <label><input type="radio" name="class" value="senior"> Senior</label>
+                </div>
+                <div class="form-row">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments">Put your comments here</textarea>
+                </div>
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="blank"></option>
+                        <option value="hi">Hawaii</option>
+                        <option value="ca">California</option>
+                        <option value="co">Colorado</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit">
+                </div>
+            </fieldset>
+        </form>
+
+        <hr>
+        <h3>
+            Engagement Questions:
+        </h3>
+        <h4>
+            What is AJAX?
+        </h4>
+        <p>
+            Asynchronous JavaScript and XML 
+        </p>
+        <h4>
+            Why do you put your JS Code in a separate file?
+        </h4>
+        <p>
+            It is for better organization. It is easier to manage if the HTML and JavaScript codes are separate. Also, if you put your JS Code in a separate file, you can reuse it for your other web pages.
+        </p>
+    </main>
+    <footer>
+        <p>&copy;Jaera Villar 2024</p>
+    </footer>
+    <script src="form.js"></script>
+</body>
+</html>
