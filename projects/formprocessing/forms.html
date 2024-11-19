@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Sheet</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <header>
+        <h1>Create an Account</h1>
+    </header>
+    <main>
+        <div id="message"></div>
+        <form action="processing.html" method="post" id="myForm">
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div class="form-row">
+                    <label for="firstInput">First name:</label>
+                    <input type="text" id="firstInput" name="fname" placeholder="First Name">
+                </div>
+                <div class="form-row">
+                    <label for="lastInput">Last Name:</label>
+                    <input type="text" id="lastInput" name="lname" placeholder="Last Name">
+                </div>
+                <div class="check-row">
+                    <div class="spacer">Gender:</div>
+                    <label><input type="radio" name="gender" value="male" class="gender" required>Male</label>
+                    <label><input type="radio" name="gender" value="female" class="gender">Female</label>
+                    <label><input type="radio" name="gender" value="other" class="gender">Prefer not to say</label>
+                </div>
+                <div class="form-row">
+                    <label for="birthdateInput">Birthdate:</label>
+                    <input type="date" name="birthdate" id="birthdateInput" required>
+                </div>
+                <div class="form-row">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age">
+                </div>
+                <div class="form-row">
+                    <label for="emailInput">Email:</label>
+                    <input type="email" id="emailInput" name="email" placeholder="sample@email.com" required>
+                </div>
+                <div class="form-row">
+                    <label for="passInput">Password:</label>
+                    <input type="password" id="passInput" name="pass" required>
+                </div>
+                <div class="form-row">
+                    <label for="class">Class:</label>
+                    <select name="class" id="class">
+                        <option value="freshman" selected>Freshman</option>
+                        <option value="sophomore">Sophomore</option>
+                        <option value="junior">Junior</option>
+                        <option value="senior">Senior</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="fav">Favorites:</label>
+                    <textarea name="favorites" id="fav" required>Type something you like here...</textarea>
+                </div>
+                <hr>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label>
+                        <input type="checkbox" name="agree" id="termsAndCond" checked>
+                        I have read and agree to the Terms and Conditions
+                    </label>
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label>
+                        <input type="checkbox" name="agree" id="updates" checked>
+                        I want to receive updates through email.
+                    </label>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit">
+                </div>
+            </fieldset>
+        </form>
+
+    </main>
+    <footer>
+        <hr>
+        <p>&copy;Jaera Villar 2024</p>
+    </footer>
+    <script src="forms.js"></script>
+</body>
+</html>
