@@ -33,6 +33,11 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
         return;
     }
 
+    if (!email) {
+        alert("Please provide an email.");
+        return;
+    }
+
     if (!password || password.length < 8) {
         alert("Password must be at least 8 characters long.");
         return;
