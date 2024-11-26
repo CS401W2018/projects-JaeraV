@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    
+}
+
+header {
+    background-color: antiquewhite;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-family: cursive;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    background-color: bisque;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: bisque;
+}
+
+nav a:hover {
+    background-color: aliceblue;
+}
+
+.definition {
+    max-width: 600px;
+    margin: 10px auto;
+    border: thin solid black;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: aliceblue;
+}
+
+#eyepicture {
+    width: 300px;
+    border: thin solid black;
+    float: left;
+}
+
+#watermelonpicture {
+    width: 300px;
+    border: thin solid black;
+    float: right;
+}
+
+#eunbipicture {
+    width: 300px;
+    border: thin solid black;
+    float: left;
+}
+.clear {
+    clear: both;
+}
+
+.text {
+    padding: 10px;
+}
+
+.sketch {
+    /* margin: auto; */
+    border: thin solid black;
+}
+
+.giraffe {
+    height: 381px;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width:600px) {
+    header {
+        font-size: 14pt;
+        padding: 5px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        border: thin solid beige;
+        padding: 8px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sketch {
+        margin: auto;
+        border: thin solid black;
+    }
+}
