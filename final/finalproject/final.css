@@ -40,6 +40,10 @@ nav a:hover {
     background-color: aliceblue;
 }
 
+.journey {
+    font-family: cursive;
+}
+
 #eyepicture {
     width: 300px;
     border: thin solid black;
@@ -81,6 +85,43 @@ nav a:hover {
 }
 
 
+table {
+    max-width: 80%;
+    margin: auto;
+}
+
+thead th {
+    background-color: burlywood;
+    padding: 10px;
+    font-size: larger;
+}
+
+tbody tr td {
+    background-color: antiquewhite;
+}
+
+.drawingstyles {
+    margin: 20px auto;
+}
+
+.paintingmedium {
+    margin: 20px auto;
+}
+
+
+caption {
+    caption-side: bottom;
+}
+
+.tabledef {
+    border: thick solid rgb(159, 113, 54);
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 10px auto;
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgb(202, 148, 78);
+}
+
 @media only screen and (max-width:600px) {
     header {
         font-size: 14pt;
@@ -105,4 +146,15 @@ nav a:hover {
         margin: auto;
         border: thin solid black;
     }
+
+    .samplepic {
+        margin: auto;
+    }
+
+    .vertical {
+        display: flex;
+        flex-direction: column;
+    }
+
+
 }
