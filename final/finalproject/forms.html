@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+<body>
+    <header>
+        <h1>The Art of Your Life</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="drawing.html">Drawing</a>
+        <a href="painting.html">Painting</a>
+        <a href="digitalart.html">Digital Art</a>
+        <a href="table.html">Favorites</a>
+        <a>Contact</a>
+    </nav>
+    <main>
+        <div id="message"></div>
+        <form action="processing.html" method="post" id="myForm">
+            <fieldset>
+                <legend>Send us a message:</legend>
+                <div class="form-row">
+                    <label for="firstInput">First name:</label>
+                    <input type="text" id="firstInput" name="fname" placeholder="First Name">
+                </div>
+                <div class="form-row">
+                    <label for="lastInput">Last Name:</label>
+                    <input type="text" id="lastInput" name="lname" placeholder="Last Name">
+                </div>
+                <div class="form-row">
+                    <label for="emailInput">Email:</label>
+                    <input type="email" id="emailInput" name="email" placeholder="sample@email.com">
+                </div>
+                <div class="form-row">
+                    <label for="yourMessage">Message:</label>
+                    <textarea name="favorites" id="yourMessage" required>Type your message here...</textarea>
+                </div>
+                <hr>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label>
+                        <input type="checkbox" name="agree" id="termsAndCond" checked>
+                        I have read and agree to the Terms and Conditions
+                    </label>
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label>
+                        <input type="checkbox" name="agree" id="updates" checked>
+                        I want to receive updates through email.
+                    </label>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;Jaera Villar 2024</p>
+    </footer>
+    <script src="forms.js"></script>
+</body>
+</html>

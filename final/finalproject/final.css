@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: antiquewhite;
+    background-color: #4b6382;
     padding: 25px;
     text-align: center;
 }
@@ -13,22 +13,26 @@ header {
 header h1 {
     margin: 0;
     font-family: cursive;
+    color: white;
 }
 
 nav a {
     display: block;
     padding: 10px;
-    background-color: bisque;
+    background-color: #071739;
+    color: white;
+    font-weight: bolder;
 }
 
 nav {
     display: flex;
     justify-content: space-evenly;
-    background-color: bisque;
+    background-color: #071739;
 }
 
 nav a:hover {
     background-color: aliceblue;
+    color: #071739;
 }
 
 .definition {
@@ -40,9 +44,9 @@ nav a:hover {
     background-color: aliceblue;
 }
 
-.journey {
+/* .journey {
     font-family: cursive;
-}
+} */
 
 #eyepicture {
     width: 300px;
@@ -122,6 +126,122 @@ caption {
     box-shadow: 5px 5px 5px rgb(202, 148, 78);
 }
 
+
+/* painting.html page */
+.page_title {
+    font-family: cursive;
+    text-align: center;
+    font-size: 30pt;
+}
+
+h2 {
+    margin: 0;
+}
+
+.line {
+    max-width: 600px;
+}
+
+.subtitle_intro {
+    font-size: 20pt;
+    text-align: center;
+}
+
+.painting_pic {
+    float: left;
+}
+
+.lside_pic {
+    height: 300px;
+}
+
+.box_lpic_and_text {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.ed_font {
+    font-size: 15pt;
+}
+
+.threepictures {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.ed_border {
+    border: thin solid brown;
+    margin: 5px;
+}
+
+.ed_pic {
+    height: 300px;
+}
+
+/* forms.html page */
+fieldset {
+    max-width: 900px;
+    margin: 10px auto;
+    border: thick solid #9c6644;
+    border-radius: 25px;
+}
+
+legend {
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #cdd5d8;
+    color: #462a1c;
+    font-weight: 900;
+    font-size: 15pt;
+}
+
+.form-row, .check-row {
+    display: flex;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.form-row label {
+    width: 100px;
+    text-align: right;
+}
+
+.spacer {
+    width: 100px;
+    text-align: right;
+}
+
+input:not([type="submit"]), select, textarea {
+    padding: 10px 220px 10px 10px;
+    background-color: #fff3e2;
+    font-size: 1.2em;
+    border-radius: 9px;
+}
+
+input:not([type="submit"]):focus, select:focus, textarea:focus {
+    background-color: white;
+}
+
+input[type='submit'] {
+    padding: 20px 190px;
+    font-size: 1em;
+    background-color: #ddb892;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(50, 50, 50, 60%);
+    font-weight: bolder;
+}
+
+footer {
+    background-color: #071739;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+    padding: 10px;
+}
+
 @media only screen and (max-width:600px) {
     header {
         font-size: 14pt;
@@ -151,10 +271,54 @@ caption {
         margin: auto;
     }
 
-    .vertical {
+    /* .vertical {
+        display: flex;
+        flex-direction: column;
+    } */
+
+    /* painting.html */
+    .box_lpic_and_text {
         display: flex;
         flex-direction: column;
     }
 
+    .lside_pic {
+        width: 100%;
+        height: auto;
+    }
 
+    .painting_pic {
+        margin: auto;
+        max-width: 100%;
+    }
+
+    .ed_border {
+        /* max-width: 500px; */
+        /* border: none; */
+        margin: auto;
+    }
+
+    .ed_pic {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .threepictures {
+        display: flex;
+        flex-flow: column wrap;
+        gap: 10px;
+    }
+
+    /* forms.html style */
+    .form-row, .check-row {
+        flex-direction: column;
+    }
+
+    .form-row  label{
+        text-align: left;
+    }
+
+    .spacer {
+        text-align: left;
+    }
 }
