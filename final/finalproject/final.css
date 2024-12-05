@@ -1,6 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    background-color: #f1ece7;
     
 }
 
@@ -35,6 +36,11 @@ nav a:hover {
     color: #071739;
 }
 
+.current_page {
+    background-color: #cdd5d8;
+    color: #071739;
+}
+
 .definition {
     max-width: 600px;
     margin: 10px auto;
@@ -44,27 +50,56 @@ nav a:hover {
     background-color: aliceblue;
 }
 
+/* more css index.html */
+
+h2 {
+    margin: 0;
+}
+
+.h_title {
+    font-family: cursive;
+    text-align: center;
+    font-size: 25pt;
+
+}
+
+.h_underline {
+    width: 200px;
+}
+
 /* .journey {
     font-family: cursive;
 } */
 
 #eyepicture {
     width: 300px;
-    border: thin solid black;
+    /* border: thick solid #a68868; */
     float: left;
+    box-shadow: 10px 10px 10px rgb(202, 148, 78);
 }
 
 #watermelonpicture {
     width: 300px;
-    border: thin solid black;
+    box-shadow: 10px 10px 10px rgb(202, 148, 78);
     float: right;
 }
 
 #eunbipicture {
     width: 300px;
-    border: thin solid black;
+    box-shadow: 10px 10px 10px rgb(202, 148, 78);
     float: left;
 }
+
+.h_caption {
+    text-align: center;
+}
+
+.d_final {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13pt;
+}
+
 .clear {
     clear: both;
 }
@@ -75,7 +110,8 @@ nav a:hover {
 
 .sketch {
     /* margin: auto; */
-    border: thin solid black;
+    box-shadow: 10px 10px 10px rgb(202, 148, 78);
+    margin: 20px;
 }
 
 .giraffe {
@@ -84,7 +120,7 @@ nav a:hover {
 
 .container {
     display: flex;
-    gap: 10px;
+    /* gap: 10px; */
     justify-content: center;
 }
 
@@ -98,18 +134,25 @@ thead th {
     background-color: burlywood;
     padding: 10px;
     font-size: larger;
+    border: thin solid brown;
+    /* border-collapse: collapse; */
 }
 
 tbody tr td {
     background-color: antiquewhite;
+    border: thin solid brown;
+    /* border-collapse: collapse; */
 }
 
 .drawingstyles {
     margin: 20px auto;
+    border: thin solid brown;
+    border-collapse: collapse;
 }
 
 .paintingmedium {
     margin: 20px auto;
+    border-collapse: collapse;
 }
 
 
@@ -126,6 +169,9 @@ caption {
     box-shadow: 5px 5px 5px rgb(202, 148, 78);
 }
 
+.style_type {
+    text-align: center;
+}
 
 /* painting.html page */
 .page_title {
@@ -145,10 +191,12 @@ h2 {
 .subtitle_intro {
     font-size: 20pt;
     text-align: center;
+    font-family: cursive;
 }
 
 .painting_pic {
     float: left;
+    box-shadow: 10px 10px 10px rgb(202, 148, 78);
 }
 
 .lside_pic {
@@ -161,30 +209,34 @@ h2 {
 }
 
 .ed_font {
-    font-size: 15pt;
+    font-size: 13pt;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .threepictures {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    gap: 25px;
 }
 
 .ed_border {
-    border: thin solid brown;
-    margin: 5px;
+    /* border: thin solid brown; */
+    margin: 20px 5px;
 }
 
 .ed_pic {
     height: 300px;
+    box-shadow: 10px 10px 10px rgb(202, 148, 78);
 }
 
 /* forms.html page */
 fieldset {
     max-width: 900px;
-    margin: 10px auto;
+    margin: 20px auto;
     border: thick solid #9c6644;
     border-radius: 25px;
+    box-shadow: 10px 10px 10px rgb(202, 148, 78);
 }
 
 legend {
@@ -232,6 +284,32 @@ input[type='submit'] {
     font-weight: bolder;
 }
 
+/* digitalart.html page */
+
+.da_definition {
+    /* border: thin solid black; */
+    width: 80%;
+    margin: auto;
+    font-size: 13pt;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.divider {
+    margin: 50px 0 0 0;
+}
+
+.narration {
+    font-family: cursive;
+    font-size: 20pt;
+    text-align: center;
+}
+
+.d_video {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 20px 0;
+}
+
 footer {
     background-color: #071739;
     color: white;
@@ -242,7 +320,7 @@ footer p {
     padding: 10px;
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:650px) {
     header {
         font-size: 14pt;
         padding: 5px;
@@ -263,8 +341,8 @@ footer p {
     }
 
     .sketch {
-        margin: auto;
-        border: thin solid black;
+        margin: 20px auto;
+        /* border: thin solid black; */
     }
 
     .samplepic {
@@ -295,7 +373,9 @@ footer p {
     .ed_border {
         /* max-width: 500px; */
         /* border: none; */
-        margin: auto;
+        margin: 10px auto;
+        border: none;
+        box-shadow: 10px 10px 10px rgb(202, 148, 78);
     }
 
     .ed_pic {
